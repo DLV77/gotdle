@@ -152,7 +152,7 @@ export const CHARACTERS: Character[] = [
     gender: "Male", status: "Dead",
     origin: "The Westerlands", continent: "Westeros",
     title: "None", titleTier: "Commoner",
-    firstSeason: 1,
+    firstSeason: 1, imageUrl: W + "a/a5/No_One_09.jpg",
   },
   {
     id: 17, name: "Kevan Lannister",
@@ -160,7 +160,7 @@ export const CHARACTERS: Character[] = [
     gender: "Male", status: "Dead",
     origin: "The Westerlands", continent: "Westeros",
     title: "Lord", titleTier: "High Nobility",
-    firstSeason: 1,
+    firstSeason: 1, imageUrl: W + "6/6d/Kevan-profile.png",
   },
   // ── Targaryen ────────────────────────────────────────────────────────────
   {
@@ -194,7 +194,7 @@ export const CHARACTERS: Character[] = [
     gender: "Male", status: "Dead",
     origin: "The North", continent: "Westeros",
     title: "Maester", titleTier: "Military",
-    firstSeason: 1,
+    firstSeason: 1, imageUrl: W + "3/32/Aemonepisode5.png",
   },
   // ── Baratheon ────────────────────────────────────────────────────────────
   {
@@ -245,7 +245,7 @@ export const CHARACTERS: Character[] = [
     gender: "Female", status: "Dead",
     origin: "Dragonstone", continent: "Westeros",
     title: "Lady", titleTier: "High Nobility",
-    firstSeason: 2,
+    firstSeason: 2, imageUrl: W + "6/65/SelyseS05E05.png",
   },
   // ── Greyjoy ──────────────────────────────────────────────────────────────
   {
@@ -490,7 +490,7 @@ export const CHARACTERS: Character[] = [
     gender: "Male", status: "Dead",
     origin: "The North", continent: "Westeros",
     title: "None", titleTier: "Commoner",
-    firstSeason: 1,
+    firstSeason: 1, imageUrl: W + "e/e6/Pypar-mockingbird.jpg",
   },
   // ── Free Folk ────────────────────────────────────────────────────────────
   {
@@ -533,7 +533,7 @@ export const CHARACTERS: Character[] = [
     gender: "Male", status: "Dead",
     origin: "Beyond the Wall", continent: "Beyond the Wall",
     title: "None", titleTier: "Commoner",
-    firstSeason: 4,
+    firstSeason: 4, imageUrl: W + "9/96/Styr-HD.png",
   },
   // ── Independents ─────────────────────────────────────────────────────────
   {
@@ -666,7 +666,7 @@ export const CHARACTERS: Character[] = [
     gender: "Male", status: "Alive",
     origin: "King's Landing", continent: "Westeros",
     title: "None", titleTier: "Commoner",
-    firstSeason: 1,
+    firstSeason: 1, imageUrl: W + "8/88/Hot_Pie_at_the_Inn.PNG",
   },
   {
     id: 77, name: "Gilly",
@@ -748,7 +748,7 @@ export const CHARACTERS: Character[] = [
     gender: "Male", status: "Dead",
     origin: "The Riverlands", continent: "Westeros",
     title: "Lord", titleTier: "High Nobility",
-    firstSeason: 1,
+    firstSeason: 1, imageUrl: W + "e/e4/S06E06_-_Walder_Frey_Cropped_new.jpg",
   },
   {
     id: 87, name: "Davos Seaworth",
@@ -781,7 +781,7 @@ export const CHARACTERS: Character[] = [
     gender: "Male", status: "Dead",
     origin: "King's Landing", continent: "Westeros",
     title: "None", titleTier: "Commoner",
-    firstSeason: 1,
+    firstSeason: 1, imageUrl: W + "0/03/Ilyn_Payne_infobox.jpg",
   },
   {
     id: 91, name: "Lyanna Stark",
@@ -807,7 +807,7 @@ export const CHARACTERS: Character[] = [
     gender: "Male", status: "Dead",
     origin: "Beyond the Wall", continent: "Beyond the Wall",
     title: "None", titleTier: "Commoner",
-    firstSeason: 5,
+    firstSeason: 5, imageUrl: W + "1/19/5x08_Wun_Wun.png",
   },
   {
     id: 94, name: "Lady Crane",
@@ -815,7 +815,7 @@ export const CHARACTERS: Character[] = [
     gender: "Female", status: "Dead",
     origin: "Essos", continent: "Essos",
     title: "None", titleTier: "Commoner",
-    firstSeason: 6,
+    firstSeason: 6, imageUrl: W + "a/a3/Lady_Crane.png",
   },
   {
     id: 95, name: "Craster",
@@ -841,7 +841,7 @@ export const CHARACTERS: Character[] = [
     gender: "Male", status: "Dead",
     origin: "Beyond the Wall", continent: "Beyond the Wall",
     title: "None", titleTier: "Commoner",
-    firstSeason: 2,
+    firstSeason: 2, imageUrl: W + "1/1e/5x08_Lord_of_Bones.jpg",
   },
   {
     id: 98, name: "Hizdahr zo Loraq",
@@ -858,7 +858,7 @@ export const CHARACTERS: Character[] = [
     gender: "Male", status: "Dead",
     origin: "Beyond the Wall", continent: "Beyond the Wall",
     title: "None", titleTier: "Commoner",
-    firstSeason: 4,
+    firstSeason: 4, imageUrl: W + "a/a8/Oathbreaker_05.jpg",
   },
   {
     id: 100, name: "Meryn Trant",
@@ -866,7 +866,7 @@ export const CHARACTERS: Character[] = [
     gender: "Male", status: "Dead",
     origin: "King's Landing", continent: "Westeros",
     title: "Knight", titleTier: "Military",
-    firstSeason: 1,
+    firstSeason: 1, imageUrl: W + "4/46/Ser_Meryn.png",
   },
   {
     id: 101, name: "Areo Hotah",

@@ -1,26 +1,107 @@
 @import "tailwindcss";
 
+@theme {
+  --color-gold: #d4af37;
+  --color-gold-light: #f0d472;
+  --color-gold-dark: #a88c2a;
+  --color-stone-darkest: #0c0c0d;
+  --color-stone-dark: #161618;
+  --color-stone: #1e1e21;
+  --color-stone-light: #2a2a2e;
+  --color-iron: #3d3d42;
+  --color-parchment: #e8e0d0;
+  --color-parchment-dim: #9a8f80;
+  --color-correct: #166534;
+  --color-correct-bg: #14532d;
+  --color-partial: #92400e;
+  --color-partial-bg: #78350f;
+  --color-wrong: #374151;
+  --color-wrong-bg: #1f2937;
+  --font-cinzel: var(--font-cinzel);
+  --font-crimson: var(--font-crimson);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0c0c0d;
+  --foreground: #e8e0d0;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-crimson), Georgia, serif;
+  min-height: 100dvh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #161618;
+}
+::-webkit-scrollbar-thumb {
+  background: #3d3d42;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Gold divider */
+.divider-gold {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+}
+
+/* Animated cell flip */
+@keyframes flip-in {
+  0% { transform: rotateX(0deg); }
+  50% { transform: rotateX(-90deg); }
+  100% { transform: rotateX(0deg); }
+}
+
+.cell-flip {
+  animation: flip-in 0.5s ease-in-out;
+}
+
+/* Shake on wrong */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+}
+
+.shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+/* Glow on correct */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 8px #d4af37; }
+  50% { box-shadow: 0 0 24px #d4af37, 0 0 48px #a88c2a; }
+}
+
+.glow {
+  animation: glow-pulse 1.5s ease-in-out 3;
+}
+
+/* Input font size >= 16px to prevent iOS zoom */
+input[type="text"],
+input[type="search"] {
+  font-size: 16px;
+}
+
+/* Mobile touch targets */
+button {
+  min-height: 44px;
+  touch-action: manipulation;
 }

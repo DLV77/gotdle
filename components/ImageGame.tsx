@@ -16,11 +16,11 @@ export default function ImageGame() {
   const stages = useMemo(() => {
     const b = config.imageBlurStart;
     return [
-      [b,                        100, 0.55],
-      [Math.round(b * 0.77),      85, 0.65],
-      [Math.round(b * 0.55),      65, 0.75],
-      [Math.round(b * 0.36),      45, 0.85],
-      [Math.round(b * 0.18),      20, 0.93],
+      [b,                        100, 0.75],
+      [Math.round(b * 0.75),      80, 0.82],
+      [Math.round(b * 0.55),      58, 0.88],
+      [Math.round(b * 0.35),      32, 0.93],
+      [Math.round(b * 0.16),      10, 0.97],
       [1,                          0, 1.0],
       [0,                          0, 1.0],
     ];

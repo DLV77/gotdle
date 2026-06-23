@@ -37,4 +37,7 @@ export const DEATH_CLUES: DeathClue[] = [
   { id: 28, characterId: 28, characterName: "Theon Greyjoy",       season: 8, clue: "Charged alone at the Night King with a broken spear, buying the only seconds that would ever matter." },
   { id: 29, characterId: 79, characterName: "Missandei",           season: 8, clue: "Beheaded in chains on the city walls, the most calculated cruelty to shatter a queen's restraint." },
   { id: 30, characterId: 18, characterName: "Daenerys Targaryen",  season: 8, clue: "Stabbed through the heart in the throne room she had just reduced to ash to finally claim." },
+  { id: 31, characterId: 49, characterName: "Jon Snow",            season: 5, clue: "Lured to a meeting and stabbed repeatedly in the courtyard of a frozen fortress by his own sworn brothers — each attacker muttering 'for the Watch' as he bled out in the snow." },
+  { id: 32, characterId: 10, characterName: "Cersei Lannister",    season: 8, clue: "Sought shelter deep beneath the crumbling Red Keep as dragon fire tore the city apart above her, and was buried alive when the ancient walls finally gave way." },
+  { id: 33, characterId: 11, characterName: "Jaime Lannister",     season: 8, clue: "He had escaped captivity and raced back to the woman he loved in the doomed capital — the two of them were swallowed together when the great keep collapsed around them." },
 ];

@@ -43,4 +43,6 @@ export const QUOTES: Quote[] = [
   { id: 33, text: "The night is dark and full of terrors, but the fire burns them all away.", characterId: 88, characterName: "Melisandre", season: 3 },
   { id: 34, text: "We don't get to choose who we love.", characterId: 2, characterName: "Catelyn Stark", season: 3 },
   { id: 35, text: "I am not your little princess.", characterId: 29, characterName: "Yara Greyjoy", season: 2 },
+  { id: 36, text: "I'm not Brandon Stark anymore.", characterId: 6, characterName: "Bran Stark", season: 7 },
+  { id: 37, text: "I won every battle, but I'm losing this war.", characterId: 3, characterName: "Robb Stark", season: 3 },
 ];

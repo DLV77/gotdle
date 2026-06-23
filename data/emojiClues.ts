@@ -37,4 +37,5 @@ export const EMOJI_CLUES: EmojiClue[] = [
   { id: 28, characterId: 74, characterName: "High Sparrow",        emojis: "⛪🕊️👣⚡",     flavorText: "Bare-footed preacher who briefly held the most powerful city on earth." },
   { id: 29, characterId: 19, characterName: "Viserys Targaryen",   emojis: "👑😤🏖️🔥",     flavorText: "He called himself the dragon. He was not the dragon." },
   { id: 30, characterId: 79, characterName: "Missandei",           emojis: "🌍💬🔗❤️",     flavorText: "Translator, advisor, friend — her last word was a command." },
+  { id: 31, characterId: 6,  characterName: "Bran Stark",          emojis: "🌳👁️🐦‍⬛🦽",     flavorText: "He couldn't walk, yet he could see everywhere — past, present, and future at once." },
 ];

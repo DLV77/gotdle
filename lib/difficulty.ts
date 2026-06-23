@@ -23,7 +23,7 @@ export const DIFFICULTY_CONFIG: Record<Difficulty, DifficultyConfig> = {
     maxGuesses: { classic: 10, image: 8, quote: 8, emoji: 8, death: 8 },
     hintCost: 0,
     pool: "major",
-    imageBlurStart: 14,
+    imageBlurStart: 8,
   },
   medium: {
     label: "Medium",
@@ -32,7 +32,7 @@ export const DIFFICULTY_CONFIG: Record<Difficulty, DifficultyConfig> = {
     maxGuesses: { classic: 8, image: 6, quote: 6, emoji: 6, death: 6 },
     hintCost: 1,
     pool: "all",
-    imageBlurStart: 22,
+    imageBlurStart: 12,
   },
   hard: {
     label: "Hard",
@@ -41,7 +41,7 @@ export const DIFFICULTY_CONFIG: Record<Difficulty, DifficultyConfig> = {
     maxGuesses: { classic: 5, image: 4, quote: 4, emoji: 4, death: 4 },
     hintCost: 2,
     pool: "all",
-    imageBlurStart: 30,
+    imageBlurStart: 18,
   },
   maester: {
     label: "Maester",
@@ -50,7 +50,7 @@ export const DIFFICULTY_CONFIG: Record<Difficulty, DifficultyConfig> = {
     maxGuesses: { classic: 3, image: 3, quote: 3, emoji: 3, death: 3 },
     hintCost: -1,
     pool: "all",
-    imageBlurStart: 40,
+    imageBlurStart: 24,
   },
 };
 

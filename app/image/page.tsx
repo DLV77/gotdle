@@ -1,5 +1,3 @@
-import ImageGame from "@/components/ImageGame";
-
-export default function ImagePage() {
-  return <ImageGame />;
-}
+import dynamic from "next/dynamic";
+const ImageGame = dynamic(() => import("@/components/ImageGame"), { ssr: false });
+export default function ImagePage() { return <ImageGame />; }

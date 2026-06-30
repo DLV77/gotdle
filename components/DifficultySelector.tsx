@@ -1,12 +1,13 @@
 "use client";
 
 import { useDifficulty, DIFFICULTY_CONFIG, type Difficulty } from "@/lib/difficulty";
+import CustomSettingsPanel from "./CustomSettingsPanel";
 
 export default function DifficultySelector() {
   const { difficulty, setDifficulty } = useDifficulty();
 
   return (
-    <div className="flex flex-col items-center gap-2">
+    <div className="flex flex-col items-center gap-3 w-full">
       <p
         className="text-xs text-[#9a8f80] uppercase tracking-widest"
         style={{ fontFamily: "var(--font-cinzel)" }}
@@ -37,6 +38,7 @@ export default function DifficultySelector() {
       <p className="text-[10px] text-[#9a8f80] text-center max-w-xs">
         {DIFFICULTY_CONFIG[difficulty].description}
       </p>
+      {difficulty === "custom" && <CustomSettingsPanel />}
     </div>
   );
 }

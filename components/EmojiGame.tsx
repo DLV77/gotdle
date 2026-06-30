@@ -7,7 +7,7 @@ import { pickRandom } from "@/lib/gameLogic";
 import { useDifficulty, getPool, getHints } from "@/lib/difficulty";
 import CharacterSearch from "./CharacterSearch";
 import VictoryModal from "./VictoryModal";
-import { CharacterAvatar } from "./CharacterSearch";
+import GuessItem from "./GuessItem";
 import type { Character } from "@/data/characters";
 import type { EmojiClue } from "@/data/emojiClues";
 
@@ -111,14 +111,10 @@ export default function EmojiGame() {
       </p>
 
       {guesses.length > 0 && (
-        <div className="flex flex-col gap-1.5">
+        <div className="flex flex-col gap-2">
           <p className="text-xs text-[#9a8f80] uppercase tracking-wider">Guesses</p>
-          {guesses.map((c) => (
-            <div key={c.id} className={`flex items-center gap-3 rounded-lg border px-3 py-2 ${c.id === answer.id ? "border-[#166534] bg-[#14532d]" : "border-[#374151] bg-[#1f2937]"}`}>
-              <CharacterAvatar character={c} size={32} />
-              <span className="text-sm text-[#e8e0d0]">{c.name}</span>
-              <span className="ml-auto">{c.id === answer.id ? "✓" : "✗"}</span>
-            </div>
+          {guesses.map((c, i) => (
+            <GuessItem key={c.id} character={c} isCorrect={c.id === answer.id} index={i} />
           ))}
         </div>
       )}

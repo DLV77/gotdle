@@ -105,3 +105,24 @@ button {
   min-height: 44px;
   touch-action: manipulation;
 }
+
+/* Panel appear (for CustomSettingsPanel) */
+@keyframes panel-appear-kf {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.panel-appear {
+  animation: panel-appear-kf 0.2s ease-out forwards;
+}
+
+/* Guess slide-in (for GuessItem) */
+@keyframes guess-slide-in-kf {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.guess-slide-in {
+  animation: guess-slide-in-kf 0.25s ease-out;
+  animation-fill-mode: both;
+}

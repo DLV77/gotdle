@@ -46,8 +46,8 @@ export default function GuessRow({ result, index }: Props) {
       style={{ animationDelay: `${index * 0.05}s` }}
     >
       {/* Character identity */}
-      <div className="flex items-center gap-2 w-[120px] sm:w-[150px] flex-shrink-0">
-        <CharacterAvatar character={result.character} size={36} />
+      <div className="flex items-center gap-2 w-[140px] sm:w-[160px] flex-shrink-0">
+        <CharacterAvatar character={result.character} size={48} />
         <span className="text-xs text-[#e8e0d0] truncate font-medium leading-tight">
           {result.character.name.split(" ")[0]}
         </span>
@@ -83,7 +83,7 @@ export default function GuessRow({ result, index }: Props) {
 export function GuessGridHeader() {
   return (
     <div className="flex items-center gap-2 w-full mb-1">
-      <div className="w-[120px] sm:w-[150px] flex-shrink-0" />
+      <div className="w-[140px] sm:w-[160px] flex-shrink-0" />
       <div className="flex gap-1 flex-1 overflow-x-auto pb-0.5">
         {COLUMNS.map((col) => (
           <div

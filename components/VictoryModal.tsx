@@ -59,8 +59,10 @@ export default function VictoryModal({
         )}
 
         {/* Answer card */}
-        <div className="flex items-center gap-3 w-full rounded-xl border border-[#3d3d42] bg-[#1e1e21] px-4 py-3">
-          <CharacterAvatar character={answer} size={56} />
+        <div className="flex items-center gap-4 w-full rounded-xl border border-[#3d3d42] bg-[#1e1e21] px-4 py-4">
+          <div className={`rounded-full flex-shrink-0 ${won ? "ring-4 ring-[#d4af37] ring-offset-2 ring-offset-[#1e1e21]" : "ring-4 ring-red-500/40 ring-offset-2 ring-offset-[#1e1e21]"}`}>
+            <CharacterAvatar character={answer} size={80} />
+          </div>
           <div className="text-left min-w-0">
             <p
               className="font-bold text-[#d4af37] text-base truncate"
@@ -68,9 +70,10 @@ export default function VictoryModal({
             >
               {answer.name}
             </p>
+            <p className="text-sm text-[#e8e0d0] truncate">{answer.title}</p>
             <p className="text-xs text-[#9a8f80]">{answer.house}</p>
             <p className="text-xs text-[#9a8f80]">
-              {answer.title} · Season {answer.firstSeason}
+              Season {answer.firstSeason} · {answer.status}
             </p>
           </div>
         </div>

@@ -1,5 +1,9 @@
 import Link from "next/link";
 import DifficultySelector from "@/components/DifficultySelector";
+import { CHARACTERS } from "@/data/characters";
+import { QUOTES } from "@/data/quotes";
+import { EMOJI_CLUES } from "@/data/emojiClues";
+import { DEATH_CLUES } from "@/data/deaths";
 
 const MODES = [
   {
@@ -55,6 +59,14 @@ const MODES = [
 ];
 
 export default function Home() {
+  const stats = [
+    { label: "Characters", value: CHARACTERS.length, icon: "👤" },
+    { label: "Quotes", value: QUOTES.length, icon: "💬" },
+    { label: "Emoji Clues", value: EMOJI_CLUES.length, icon: "🎭" },
+    { label: "Death Clues", value: DEATH_CLUES.length, icon: "💀" },
+    { label: "Game Modes", value: 5, icon: "⚔️" },
+  ];
+
   return (
     <main className="flex flex-col items-center justify-center min-h-dvh px-4 py-12 gap-10">
       {/* Hero */}
@@ -70,9 +82,20 @@ export default function Home() {
           A Game of Thrones Guessing Game
         </p>
         <hr className="divider-gold w-48 mt-1" />
-        <p className="text-[#9a8f80] text-xs max-w-xs text-center leading-relaxed mt-1">
-          103 characters · 5 game modes · Unlimited plays · No daily wait
+        <p className="text-[#9a8f80] text-xs max-w-sm text-center leading-relaxed mt-1">
+          Test your knowledge of the Seven Kingdoms · Unlimited plays · No daily wait
         </p>
+      </div>
+
+      {/* Live stats bar */}
+      <div className="flex flex-wrap justify-center gap-3 sm:gap-5">
+        {stats.map((s) => (
+          <div key={s.label} className="flex flex-col items-center gap-0.5">
+            <span className="text-xl">{s.icon}</span>
+            <span className="text-lg font-black text-[#d4af37]" style={{ fontFamily: "var(--font-cinzel)" }}>{s.value}</span>
+            <span className="text-[10px] text-[#9a8f80] uppercase tracking-wider">{s.label}</span>
+          </div>
+        ))}
       </div>
 
       {/* Difficulty selector */}
